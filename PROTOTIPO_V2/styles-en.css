@@ -75,29 +75,37 @@
 }
 
 /* ============================================
-   PROFESSIONAL BANNER IMAGE
+   PROFESSIONAL BANNER IMAGE - LOGO 3
    ============================================ */
 .hero-banner-image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 85%;
-  max-width: 1000px;
+  width: 60%;
+  max-width: 700px;
   height: auto;
   z-index: 1;
-  opacity: 0.25;
+  opacity: 0.35;
   pointer-events: none;
-  border-radius: 1.5rem;
-  overflow: hidden;
+  animation: bannerFloat 8s ease-in-out infinite;
 }
 
 .hero-banner-image img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  filter: blur(1px) brightness(1.1);
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(30, 58, 95, 0.2));
+}
+
+@keyframes bannerFloat {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -52%) scale(1.02);
+  }
 }
 
 /* ============================================
@@ -717,8 +725,9 @@
   }
 
   .hero-banner-image {
-    width: 95%;
-    opacity: 0.15;
+    width: 80%;
+    max-width: 400px;
+    opacity: 0.25;
   }
 
   .hero-banner {
