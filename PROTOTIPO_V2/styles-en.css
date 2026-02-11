@@ -1,0 +1,608 @@
+/* ============================================
+   ALEXANDRIA'S DESIGN - ENHANCED PROFESSIONAL WEBSITE
+   English Version with Vibrant Design
+   ============================================ */
+
+/* Import from base styles */
+@import url('styles.css');
+
+/* ============================================
+   ENHANCED COLOR BACKGROUNDS
+   ============================================ */
+.sectores {
+  background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #F9FAFB 100%);
+}
+
+.featured-project {
+  background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 30%, #FEF3C7 60%, #F9FAFB 100%);
+}
+
+.portfolio {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 50%, #F0FDF4 100%);
+}
+
+.metodologia {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 50%, #EFF6FF 100%);
+}
+
+/* ============================================
+   ENHANCED LOGO - MORE STRIKING
+   ============================================ */
+.logo-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #1E3A5F 0%, #3182CE 50%, #0694A2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+  position: relative;
+  overflow: hidden;
+  animation: logoGlow 3s ease-in-out infinite;
+}
+
+.logo-icon::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: logoShine 4s infinite;
+}
+
+.logo-icon svg {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(49, 130, 206, 0.5);
+  }
+}
+
+@keyframes logoShine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.logo-text h2 {
+  font-size: 1.35rem;
+  background: linear-gradient(135deg, #1E3A5F, #3182CE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   ENHANCED HERO ANIMATION
+   ============================================ */
+.hero-background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-background-animation::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.15), transparent 70%);
+  border-radius: 50%;
+  top: -200px;
+  right: -200px;
+  animation: float1 20s ease-in-out infinite;
+}
+
+.hero-background-animation::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(6, 148, 162, 0.15), transparent 70%);
+  border-radius: 50%;
+  bottom: -150px;
+  left: -150px;
+  animation: float2 18s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-50px, 50px) scale(1.1);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+}
+
+/* ============================================
+   VIBRANT SECTOR ICONS
+   ============================================ */
+.sector-icon svg {
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sector-card:hover .sector-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%);
+}
+
+.sector-card:nth-child(1):hover .sector-icon {
+  background: linear-gradient(135deg, #3182CE 0%, #2563EB 100%);
+}
+
+.sector-card:nth-child(2):hover .sector-icon {
+  background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+}
+
+.sector-card:nth-child(3):hover .sector-icon {
+  background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+}
+
+.sector-card:nth-child(4):hover .sector-icon {
+  background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+}
+
+.sector-card:nth-child(5):hover .sector-icon {
+  background: linear-gradient(135deg, #0694A2 0%, #06B6D4 100%);
+}
+
+/* ============================================
+   REALISTIC PORTFOLIO ICONS WITH ANIMATION
+   ============================================ */
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #3182CE, #0694A2);
+  transition: all 0.4s ease;
+}
+
+.portfolio-image svg {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio-card:hover .portfolio-image svg {
+  transform: scale(1.15) translateY(-10px);
+}
+
+.portfolio-image-bua {
+  background: linear-gradient(135deg, #1E40AF, #3B82F6);
+}
+
+.portfolio-image-knoxville {
+  background: linear-gradient(135deg, #7C3AED, #A78BFA);
+}
+
+.portfolio-image-morgan {
+  background: linear-gradient(135deg, #DC2626, #F87171);
+}
+
+.portfolio-image-eccalon {
+  background: linear-gradient(135deg, #059669, #34D399);
+}
+
+.portfolio-image-burnout {
+  background: linear-gradient(135deg, #DC2626, #F472B6);
+}
+
+/* Overlay effect on hover */
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+/* ============================================
+   VIBRANT SERVICE ICONS
+   ============================================ */
+.servicio-icon {
+  background: linear-gradient(135deg, #3182CE, #0694A2);
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+.servicio-card:nth-child(1) .servicio-icon {
+  background: linear-gradient(135deg, #1E3A5F, #3182CE);
+}
+
+.servicio-card:nth-child(2) .servicio-icon {
+  background: linear-gradient(135deg, #3182CE, #0694A2);
+}
+
+.servicio-card:nth-child(3) .servicio-icon {
+  background: linear-gradient(135deg, #D97706, #F59E0B);
+}
+
+.servicio-card:nth-child(4) .servicio-icon {
+  background: linear-gradient(135deg, #DC2626, #F87171);
+}
+
+.servicio-card:nth-child(5) .servicio-icon {
+  background: linear-gradient(135deg, #7C3AED, #A78BFA);
+}
+
+.servicio-card:nth-child(6) .servicio-icon {
+  background: linear-gradient(135deg, #059669, #34D399);
+}
+
+.servicio-icon svg {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.servicio-card:hover .servicio-icon svg {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(49, 130, 206, 0);
+  }
+}
+
+/* ============================================
+   ENHANCED TRUST BADGES
+   ============================================ */
+.badge-icon {
+  background: linear-gradient(135deg, #059669, #10B981);
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+  animation: badgeBounce 2s ease-in-out infinite;
+}
+
+@keyframes badgeBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.trust-badge:hover .badge-icon {
+  background: linear-gradient(135deg, #D97706, #F59E0B);
+}
+
+/* ============================================
+   PROJECT MODAL STYLES
+   ============================================ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  margin: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: sticky;
+  top: 1rem;
+  right: 1rem;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #DC2626, #EF4444);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+}
+
+.modal-close:hover {
+  background: linear-gradient(135deg, #EF4444, #F87171);
+  transform: rotate(90deg);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+}
+
+#modal-body {
+  padding: 2rem;
+  clear: both;
+}
+
+.modal-project-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #E5E7EB;
+}
+
+.modal-project-header h2 {
+  font-size: 2rem;
+  color: #1E3A5F;
+  margin-bottom: 0.5rem;
+}
+
+.modal-project-client {
+  color: #3182CE;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.modal-project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #1E3A5F;
+}
+
+.modal-section {
+  margin-bottom: 2rem;
+}
+
+.modal-section h3 {
+  color: #1E3A5F;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-section p {
+  color: #4B5563;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.modal-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modal-feature-card {
+  background: linear-gradient(135deg, #F9FAFB, #F3F4F6);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-left: 4px solid #3182CE;
+}
+
+.modal-feature-card h4 {
+  color: #1E3A5F;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-feature-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-feature-card li {
+  color: #4B5563;
+  font-size: 0.875rem;
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-feature-card li::before {
+  content: '✓';
+  color: #059669;
+  font-weight: bold;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.modal-tag {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #3182CE, #0694A2);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   ENHANCED ANIMATIONS
+   ============================================ */
+.portfolio-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(30, 58, 95, 0.2);
+}
+
+.servicio-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.servicio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(30, 58, 95, 0.15);
+}
+
+/* ============================================
+   SCROLL PROGRESS BAR ENHANCEMENT
+   ============================================ */
+#scroll-progress {
+  background: linear-gradient(90deg, #3182CE 0%, #0694A2 50%, #D97706 100%);
+  box-shadow: 0 2px 8px rgba(49, 130, 206, 0.4);
+}
+
+/* ============================================
+   ENHANCED BUTTON EFFECTS
+   ============================================ */
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-white {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn-white:hover {
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   RESPONSIVE ENHANCEMENTS
+   ============================================ */
+@media (max-width: 768px) {
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logo-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content {
+    margin: 1rem;
+    max-height: 95vh;
+  }
+
+  .modal-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  .navbar,
+  .mobile-menu-toggle,
+  .hero-background-animation,
+  .modal,
+  #scroll-progress {
+    display: none !important;
+  }
+}

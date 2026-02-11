@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexandria's Design - Expert instructional design and eLearning development for federal government, public health, education, and corporate sectors. WOSB Certified, WCAG 2.1 AA Compliant.">
+  <meta name="keywords" content="instructional design, eLearning development, SCORM, Section 508, accessibility, bilingual training, Articulate Storyline, federal contracts">
+  <title>Alexandria's Design | Expert Instructional Design & eLearning Development</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles-en.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📚</text></svg>">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <!-- Enhanced Logo with SVG -->
+        <div class="logo-icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Book Base -->
+            <rect x="25" y="30" width="50" height="55" fill="url(#gradient1)" rx="3"/>
+            <rect x="27" y="32" width="46" height="51" fill="#fff" opacity="0.2" rx="2"/>
+
+            <!-- Pages -->
+            <line x1="50" y1="35" x2="50" y2="80" stroke="#fff" stroke-width="2" opacity="0.5"/>
+            <line x1="35" y1="45" x2="45" y2="45" stroke="#fff" stroke-width="2" opacity="0.7"/>
+            <line x1="55" y1="45" x2="65" y2="45" stroke="#fff" stroke-width="2" opacity="0.7"/>
+            <line x1="35" y1="55" x2="45" y2="55" stroke="#fff" stroke-width="2" opacity="0.7"/>
+            <line x1="55" y1="55" x2="65" y2="55" stroke="#fff" stroke-width="2" opacity="0.7"/>
+            <line x1="35" y1="65" x2="45" y2="65" stroke="#fff" stroke-width="2" opacity="0.7"/>
+            <line x1="55" y1="65" x2="65" y2="65" stroke="#fff" stroke-width="2" opacity="0.7"/>
+
+            <!-- Connection Nodes -->
+            <circle cx="30" cy="25" r="4" fill="#0694A2" opacity="0.8"/>
+            <circle cx="70" cy="25" r="4" fill="#0694A2" opacity="0.8"/>
+            <circle cx="50" cy="15" r="5" fill="#D97706" opacity="0.9"/>
+
+            <!-- Connection Lines -->
+            <line x1="30" y1="25" x2="50" y2="15" stroke="#3182CE" stroke-width="1.5" opacity="0.6"/>
+            <line x1="70" y1="25" x2="50" y2="15" stroke="#3182CE" stroke-width="1.5" opacity="0.6"/>
+            <line x1="30" y1="25" x2="50" y2="30" stroke="#3182CE" stroke-width="1.5" opacity="0.6"/>
+            <line x1="70" y1="25" x2="50" y2="30" stroke="#3182CE" stroke-width="1.5" opacity="0.6"/>
+
+            <!-- Gradients -->
+            <defs>
+              <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3182CE;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h2>Alexandria's Design</h2>
+          <span class="tagline">Transforming Knowledge into Learning Experiences</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn-primary">Get in Touch</a></li>
+      </ul>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <header class="hero">
+    <div class="hero-background-animation"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Transforming Complex Knowledge into<br>Impactful Learning Experiences</h1>
+      <p class="hero-subtitle">
+        Expert instructional design and eLearning development for federal government,
+        public health, education, and corporate sectors. Led by doctorate-level educational leaders.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-white">Request Free Consultation</a>
+        <a href="#portfolio" class="btn btn-outline">View Our Portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       TRUST BAR
+       ============================================ -->
+  <section class="trust-bar">
+    <div class="trust-container">
+      <div class="trust-badge">
+        <div class="badge-icon">✓</div>
+        <span>WOSB Certified</span>
+      </div>
+      <div class="trust-badge">
+        <div class="badge-icon">✓</div>
+        <span>GSA Schedule</span>
+      </div>
+      <div class="trust-badge">
+        <div class="badge-icon">✓</div>
+        <span>WCAG 2.1 AA</span>
+      </div>
+      <div class="trust-badge">
+        <div class="badge-icon">✓</div>
+        <span>Section 508</span>
+      </div>
+      <div class="trust-badge">
+        <div class="badge-icon">✓</div>
+        <span>SCORM Expert</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTORS WE SERVE
+       ============================================ -->
+  <section id="sectors" class="sectores">
+    <div class="container">
+      <div class="section-header">
+        <h2>Specialized Solutions for Critical Sectors</h2>
+        <p>Expertise across government, healthcare, education, and corporate training</p>
+      </div>
+
+      <div class="sectores-grid">
+        <div class="sector-card">
+          <div class="sector-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Government Building Icon -->
+              <rect x="20" y="60" width="60" height="30" fill="currentColor" opacity="0.3"/>
+              <polygon points="50,20 20,45 80,45" fill="currentColor"/>
+              <rect x="30" y="50" width="8" height="20" fill="currentColor"/>
+              <rect x="46" y="50" width="8" height="20" fill="currentColor"/>
+              <rect x="62" y="50" width="8" height="20" fill="currentColor"/>
+              <rect x="40" y="70" width="20" height="15" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>Federal Government / DoD</h3>
+          <p>DFARS-compliant training, ITAR-ready materials, and full regulatory compliance</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Healthcare Icon -->
+              <circle cx="50" cy="50" r="35" fill="currentColor" opacity="0.3"/>
+              <rect x="45" y="25" width="10" height="50" fill="currentColor"/>
+              <rect x="25" y="45" width="50" height="10" fill="currentColor"/>
+              <circle cx="50" cy="50" r="12" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>Public Health</h3>
+          <p>Bilingual courses for medical professionals, regulatory compliance, trauma-informed care</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- K-12 Education Icon -->
+              <path d="M50,25 L30,40 L30,70 L50,85 L70,70 L70,40 Z" fill="currentColor" opacity="0.3"/>
+              <rect x="35" y="45" width="30" height="3" fill="currentColor"/>
+              <rect x="35" y="52" width="30" height="3" fill="currentColor"/>
+              <rect x="35" y="59" width="20" height="3" fill="currentColor"/>
+              <circle cx="50" cy="35" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>K-12 Education</h3>
+          <p>Standards-aligned curriculum, teacher training, adaptive learning, interactive resources</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Higher Education Icon -->
+              <polygon points="50,20 20,35 20,75 50,90 80,75 80,35" fill="currentColor" opacity="0.3"/>
+              <rect x="40" y="45" width="20" height="3" fill="currentColor"/>
+              <rect x="35" y="52" width="30" height="3" fill="currentColor"/>
+              <rect x="40" y="59" width="20" height="3" fill="currentColor"/>
+              <polygon points="50,25 35,32 35,38 50,45 65,38 65,32" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Higher Education</h3>
+          <p>University course design, custom LMS platforms, professional training programs</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Corporate Icon -->
+              <rect x="25" y="30" width="50" height="50" fill="currentColor" opacity="0.3"/>
+              <rect x="32" y="40" width="12" height="12" fill="currentColor"/>
+              <rect x="56" y="40" width="12" height="12" fill="currentColor"/>
+              <rect x="32" y="60" width="12" height="12" fill="currentColor"/>
+              <rect x="56" y="60" width="12" height="12" fill="currentColor"/>
+              <rect x="40" y="25" width="20" height="8" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Corporate Sector</h3>
+          <p>Onboarding, compliance training, microlearning, gamification, and talent development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FEATURED PROJECT
+       ============================================ -->
+  <section class="featured-project">
+    <div class="container">
+      <div class="project-content">
+        <div class="project-image">
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon">📊</div>
+            <p>ACEs Aware Course Interface</p>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3>Featured Project: Becoming ACEs Aware in California</h3>
+
+          <div class="project-meta">
+            <div class="meta-item">
+              <span class="meta-icon">🏥</span>
+              <span>California Department of Public Health</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🌍</span>
+              <span>Bilingual (EN/ES)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">✓</span>
+              <span>SCORM 1.2/2004</span>
+            </div>
+          </div>
+
+          <p class="project-description">
+            Comprehensive bilingual training for healthcare professionals on Adverse Childhood Experiences (ACEs).
+            Designed for Medi-Cal teams and community organizations across California, combining Articulate Rise
+            for responsive lessons with Storyline for interactive modules.
+          </p>
+
+          <div class="project-stats">
+            <div class="stat">
+              <span class="stat-number">7</span>
+              <span class="stat-label">Interactive Lessons</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2,500+</span>
+              <span class="stat-label">Physicians Trained</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Accessibility Compliant</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="tag">Articulate Rise</span>
+            <span class="tag">Articulate Storyline</span>
+            <span class="tag tag-secondary">Bilingual EN/ES</span>
+            <span class="tag tag-secondary">WCAG 2.1 AA</span>
+            <span class="tag tag-accent">Trauma-Informed</span>
+          </div>
+
+          <a href="#" class="btn btn-white project-cta" data-project="aces-aware">View Full Case Study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES
+       ============================================ -->
+  <section id="services" class="servicios">
+    <div class="container">
+      <div class="section-header">
+        <h2>Comprehensive Instructional Design & eLearning Services</h2>
+        <p>End-to-end solutions from analysis to evaluation</p>
+      </div>
+
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-header">
+            <div class="servicio-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="35" fill="currentColor" opacity="0.2"/>
+                <path d="M35,40 L45,50 L35,60 M55,40 L65,40 M55,50 L65,50 M55,60 L65,60" stroke="currentColor" stroke-width="3" fill="none"/>
+              </svg>
+            </div>
+            <h3>Custom Instructional Design</h3>
+          </div>
+          <p>Evidence-based learning strategies using ADDIE/SAM methodologies, needs analysis, learning objectives development, and comprehensive evaluation frameworks.</p>
+          <ul class="servicio-features">
+            <li>Needs analysis and gap assessment</li>
+            <li>Learning objectives development</li>
+            <li>Standards-aligned curriculum design</li>
+            <li>Assessment strategy design</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-header">
+            <div class="servicio-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="25" width="60" height="45" rx="3" fill="currentColor" opacity="0.2"/>
+                <circle cx="35" cy="40" r="5" fill="currentColor"/>
+                <rect x="45" y="37" width="25" height="3" fill="currentColor"/>
+                <rect x="30" y="52" width="40" height="3" fill="currentColor"/>
+                <rect x="30" y="60" width="35" height="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>eLearning Development</h3>
+          </div>
+          <p>Interactive courses built with industry-leading tools including Articulate Storyline 360, Rise 360, simulations, scenario-based learning, and SCORM/xAPI compliance.</p>
+          <ul class="servicio-features">
+            <li>Articulate Storyline & Rise courses</li>
+            <li>Interactive simulations and scenarios</li>
+            <li>Gamification and project-based learning</li>
+            <li>SCORM 1.2/2004 and xAPI ready</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-header">
+            <div class="servicio-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="35" fill="currentColor" opacity="0.2"/>
+                <text x="50" y="60" font-size="40" text-anchor="middle" fill="currentColor">EN</text>
+                <text x="50" y="75" font-size="20" text-anchor="middle" fill="currentColor">ES</text>
+              </svg>
+            </div>
+            <h3>Bilingual Training Development</h3>
+          </div>
+          <p>Culturally relevant courses in English and Spanish with professional voiceovers, inclusive imagery, and specialized expertise serving Latino communities.</p>
+          <ul class="servicio-features">
+            <li>English and Spanish course development</li>
+            <li>Culturally relevant design</li>
+            <li>Professional voiceovers (ElevenLabs)</li>
+            <li>Latino community expertise</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-header">
+            <div class="servicio-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="30" width="50" height="35" rx="2" fill="currentColor" opacity="0.2"/>
+                <polygon points="40,45 40,55 50,50" fill="currentColor"/>
+                <circle cx="60" cy="50" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Multimedia Production</h3>
+          </div>
+          <p>Professional video, animation, and motion graphics using Vyond, Camtasia, Adobe Creative Suite with full editing and post-production services.</p>
+          <ul class="servicio-features">
+            <li>Video and animation (Vyond, Camtasia)</li>
+            <li>Professional voiceover production</li>
+            <li>Custom graphic design</li>
+            <li>Motion graphics and editing</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-header">
+            <div class="servicio-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="25" width="50" height="50" rx="3" fill="currentColor" opacity="0.2"/>
+                <path d="M35,40 Q50,35 65,40 M35,50 Q50,55 65,50 M35,60 Q50,57 65,60" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h3>LMS Consulting</h3>
+          </div>
+          <p>Complete learning management system services including platform implementation, SCORM/xAPI integration, content migration, training, and ongoing support.</p>
+          <ul class="servicio-features">
+            <li>LMS implementation and configuration</li>
+            <li>Platform administration</li>
+            <li>SCORM/xAPI integration</li>
+            <li>Content migration and support</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-header">
+            <div class="servicio-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="35" fill="currentColor" opacity="0.2"/>
+                <path d="M35,50 L45,60 L65,40" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Testing & Compliance</h3>
+          </div>
+          <p>Comprehensive quality assurance including WCAG 2.1 AA accessibility testing, Section 508 validation, multi-device testing with Playwright, and full compliance documentation.</p>
+          <ul class="servicio-features">
+            <li>WCAG 2.1 AA accessibility testing</li>
+            <li>Section 508 validation</li>
+            <li>Multi-device testing (Playwright)</li>
+            <li>Complete QA and documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PORTFOLIO
+       ============================================ -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Work: Proven Results Across Industries</h2>
+        <p>Sample projects demonstrating our expertise and commitment to excellence</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- BUA Project -->
+        <div class="portfolio-card" data-project="bua">
+          <div class="portfolio-image portfolio-image-bua">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- University Building -->
+              <polygon points="100,40 40,70 40,160 160,160 160,70" fill="#fff" opacity="0.3"/>
+              <rect x="80" y="90" width="15" height="20" fill="#fff"/>
+              <rect x="105" y="90" width="15" height="20" fill="#fff"/>
+              <rect x="80" y="120" width="15" height="20" fill="#fff"/>
+              <rect x="105" y="120" width="15" height="20" fill="#fff"/>
+              <rect x="85" y="145" width="30" height="15" fill="#fff"/>
+              <!-- Columns -->
+              <rect x="60" y="70" width="8" height="90" fill="#fff" opacity="0.8"/>
+              <rect x="90" y="70" width="8" height="90" fill="#fff" opacity="0.8"/>
+              <rect x="120" y="70" width="8" height="90" fill="#fff" opacity="0.8"/>
+              <rect x="150" y="70" width="8" height="90" fill="#fff" opacity="0.8"/>
+            </svg>
+            <div class="portfolio-overlay">Click to view details</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Baptist University of the Americas</h3>
+            <p class="portfolio-client">Higher Education Platform</p>
+            <p>Comprehensive online learning platform for university students featuring custom LMS integration and interactive course modules.</p>
+            <div class="portfolio-footer">
+              <span class="portfolio-tech">Articulate Storyline • Custom LMS</span>
+              <a href="#" class="portfolio-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Knoxville College Project -->
+        <div class="portfolio-card" data-project="knoxville">
+          <div class="portfolio-image portfolio-image-knoxville">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Graduation Cap -->
+              <polygon points="100,60 40,80 40,85 100,105 160,85 160,80" fill="#fff"/>
+              <rect x="95" y="105" width="10" height="40" fill="#fff"/>
+              <circle cx="100" cy="148" r="8" fill="#fff"/>
+              <!-- Book -->
+              <rect x="70" y="120" width="60" height="40" fill="#fff" opacity="0.7" rx="2"/>
+              <line x1="100" y1="125" x2="100" y2="155" stroke="#3182CE" stroke-width="2"/>
+            </svg>
+            <div class="portfolio-overlay">Click to view details</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Knoxville College Professional Development</h3>
+            <p class="portfolio-client">Higher Education Training</p>
+            <p>Curriculum development and faculty training program featuring multimedia resources and standards-aligned instruction.</p>
+            <div class="portfolio-footer">
+              <span class="portfolio-tech">Rise 360 • Multimedia Production</span>
+              <a href="#" class="portfolio-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Morgan State Project -->
+        <div class="portfolio-card" data-project="morgan">
+          <div class="portfolio-image portfolio-image-morgan">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Campus Building -->
+              <rect x="50" y="80" width="100" height="80" fill="#fff" opacity="0.3" rx="3"/>
+              <circle cx="100" cy="60" r="20" fill="#fff" opacity="0.5"/>
+              <!-- Windows -->
+              <rect x="70" y="100" width="15" height="15" fill="#fff"/>
+              <rect x="115" y="100" width="15" height="15" fill="#fff"/>
+              <rect x="70" y="125" width="15" height="15" fill="#fff"/>
+              <rect x="115" y="125" width="15" height="15" fill="#fff"/>
+              <!-- Door -->
+              <rect x="90" y="140" width="20" height="20" fill="#fff"/>
+              <!-- Flag -->
+              <rect x="140" y="50" width="3" height="50" fill="#fff"/>
+              <polygon points="143,50 143,65 160,57.5" fill="#D97706"/>
+            </svg>
+            <div class="portfolio-overlay">Click to view details</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Morgan State University Training Modules</h3>
+            <p class="portfolio-client">University Professional Training</p>
+            <p>Interactive professional development modules with SCORM compliance and comprehensive assessment frameworks.</p>
+            <div class="portfolio-footer">
+              <span class="portfolio-tech">SCORM 2004 • Interactive Content</span>
+              <a href="#" class="portfolio-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECCALON Project - ENHANCED -->
+        <div class="portfolio-card" data-project="eccalon">
+          <div class="portfolio-image portfolio-image-eccalon">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Corporate Training Network -->
+              <circle cx="100" cy="100" r="60" fill="#fff" opacity="0.2"/>
+              <!-- Central Hub -->
+              <circle cx="100" cy="100" r="20" fill="#fff"/>
+              <!-- Training Nodes -->
+              <circle cx="60" cy="70" r="12" fill="#0694A2"/>
+              <circle cx="140" cy="70" r="12" fill="#0694A2"/>
+              <circle cx="60" cy="130" r="12" fill="#0694A2"/>
+              <circle cx="140" cy="130" r="12" fill="#0694A2"/>
+              <!-- Connections -->
+              <line x1="100" y1="100" x2="60" y2="70" stroke="#D97706" stroke-width="2"/>
+              <line x1="100" y1="100" x2="140" y2="70" stroke="#D97706" stroke-width="2"/>
+              <line x1="100" y1="100" x2="60" y2="130" stroke="#D97706" stroke-width="2"/>
+              <line x1="100" y1="100" x2="140" y2="130" stroke="#D97706" stroke-width="2"/>
+              <!-- Gamification Elements -->
+              <polygon points="100,85 95,95 105,95" fill="#D97706"/>
+              <circle cx="100" cy="105" r="3" fill="#D97706"/>
+            </svg>
+            <div class="portfolio-overlay">Click to view details</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>ECCALON Corporate Training Platform</h3>
+            <p class="portfolio-client">Enterprise Talent Development</p>
+            <p>Comprehensive talent development program featuring gamification, microlearning modules, and mobile-responsive design for corporate learning.</p>
+            <div class="portfolio-footer">
+              <span class="portfolio-tech">Gamification • Microlearning • SCORM</span>
+              <a href="#" class="portfolio-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burnout Prevention Project -->
+        <div class="portfolio-card" data-project="burnout">
+          <div class="portfolio-image portfolio-image-burnout">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Healthcare Wellness Icon -->
+              <circle cx="100" cy="100" r="70" fill="#fff" opacity="0.2"/>
+              <!-- Heart with Pulse -->
+              <path d="M100,150 C100,150 50,110 50,80 C50,60 65,50 80,50 C90,50 95,55 100,65 C105,55 110,50 120,50 C135,50 150,60 150,80 C150,110 100,150 100,150 Z" fill="#fff"/>
+              <!-- Pulse Line -->
+              <path d="M60,100 L70,100 L75,85 L80,115 L85,100 L140,100" stroke="#059669" stroke-width="4" fill="none"/>
+              <!-- Wellness Sparkles -->
+              <circle cx="70" cy="65" r="3" fill="#D97706"/>
+              <circle cx="130" cy="65" r="3" fill="#D97706"/>
+              <circle cx="100" cy="55" r="4" fill="#D97706"/>
+            </svg>
+            <div class="portfolio-overlay">Click to view details</div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Prevention of Burnout for Healthcare Teams</h3>
+            <p class="portfolio-client">Healthcare Professional Wellness</p>
+            <p>Interactive wellness training for healthcare professionals addressing burnout prevention, stress management, and self-care strategies.</p>
+            <div class="portfolio-footer">
+              <span class="portfolio-tech">Articulate Rise 360 • SCORM 2004</span>
+              <a href="#" class="portfolio-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       METHODOLOGY
+       ============================================ -->
+  <section class="metodologia">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Approach: Evidence-Based Instructional Design</h2>
+        <p>Systematic methodology ensuring quality and effectiveness</p>
+      </div>
+
+      <div class="metodologia-process">
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-letter">A</span>
+            <span class="step-number">Step 1</span>
+          </div>
+          <h4>Analyze</h4>
+          <p>Needs assessment, audience analysis, and learning gap identification</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-letter">D</span>
+            <span class="step-number">Step 2</span>
+          </div>
+          <h4>Design</h4>
+          <p>Learning objectives, assessment strategy, and instructional approach</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-letter">D</span>
+            <span class="step-number">Step 3</span>
+          </div>
+          <h4>Develop</h4>
+          <p>Content creation, multimedia production, and course assembly</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-letter">I</span>
+            <span class="step-number">Step 4</span>
+          </div>
+          <h4>Implement</h4>
+          <p>Deployment, training, and user support</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-letter">E</span>
+            <span class="step-number">Step 5</span>
+          </div>
+          <h4>Evaluate</h4>
+          <p>Results measurement, feedback collection, and continuous improvement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TEAM
+       ============================================ -->
+  <section id="about" class="equipo">
+    <div class="container">
+      <div class="section-header">
+        <h2>Academic Leadership & Technical Expertise</h2>
+        <p>Doctorate-level educational leaders driving innovation in learning</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-photo">👩‍🎓</div>
+          <h3>Dr. Marie Martin, Ed.L.</h3>
+          <p class="member-title">CEO & Creative Director</p>
+          <p class="member-bio">
+            Doctor of Educational Leadership with extensive experience in instructional design and eLearning development.
+            Former VP of Education at Cell Collective, leading innovative learning solutions for diverse audiences.
+          </p>
+          <div class="member-expertise">
+            <span class="expertise-tag">Instructional Design</span>
+            <span class="expertise-tag">Educational Leadership</span>
+            <span class="expertise-tag">Curriculum Development</span>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">👨‍💼</div>
+          <h3>Dr. Charles Martin, Ed.D.</h3>
+          <p class="member-title">Chief Technology & Innovation Officer</p>
+          <p class="member-bio">
+            Doctor of Education specializing in educational technology and innovation.
+            Expert in learning management systems, SCORM/xAPI standards, and emerging educational technologies.
+          </p>
+          <div class="member-expertise">
+            <span class="expertise-tag">Educational Technology</span>
+            <span class="expertise-tag">LMS Integration</span>
+            <span class="expertise-tag">Innovation Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section id="contact" class="cta-final">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Training?</h2>
+      <p>
+        Request a free consultation and discover how Alexandria's Design can create
+        learning experiences that deliver measurable results.
+      </p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-white btn-large">Schedule Free Consultation</a>
+        <a href="#" class="btn btn-outline btn-large">Request Proposal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Alexandria's Design</h4>
+        <p>Expert instructional design and eLearning development for government, healthcare, education, and corporate sectors. Led by doctorate-level educational leaders.</p>
+        <div class="footer-certifications">
+          <span class="cert-badge">WOSB</span>
+          <span class="cert-badge">GSA</span>
+          <span class="cert-badge">WCAG 2.1 AA</span>
+          <span class="cert-badge">Section 508</span>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Instructional Design</a></li>
+          <li><a href="#services">eLearning Development</a></li>
+          <li><a href="#services">Bilingual Training</a></li>
+          <li><a href="#services">Multimedia Production</a></li>
+          <li><a href="#services">LMS Consulting</a></li>
+          <li><a href="#services">Testing & Compliance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Industries</h4>
+        <ul class="footer-links">
+          <li><a href="#sectors">Federal Government / DoD</a></li>
+          <li><a href="#sectors">Public Health</a></li>
+          <li><a href="#sectors">K-12 Education</a></li>
+          <li><a href="#sectors">Higher Education</a></li>
+          <li><a href="#sectors">Corporate Training</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Information</h4>
+        <ul class="contact-info">
+          <li>
+            <span>📧</span>
+            <a href="mailto:info@alexandriasdesign.com">info@alexandriasdesign.com</a>
+          </li>
+          <li>
+            <span>📞</span>
+            <a href="tel:+15551234567">(555) 123-4567</a>
+          </li>
+          <li>
+            <span>📍</span>
+            <span>Virtual Office - Serving Nationwide</span>
+          </li>
+          <li>
+            <span>🕒</span>
+            <span>Monday - Friday, 9 AM - 5 PM EST</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Alexandria's Design. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       PROJECT MODALS
+       ============================================ -->
+  <!-- Modal Container -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script-en.js"></script>
+
+</body>
+</html>
