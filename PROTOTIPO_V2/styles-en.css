@@ -101,6 +101,97 @@
   z-index: 0;
 }
 
+/* ============================================
+   HERO BANNER ILLUSTRATION
+   ============================================ */
+.hero-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  z-index: 1;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.banner-illustration {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(30, 58, 95, 0.1));
+}
+
+/* Banner Animations */
+.books-stack {
+  animation: floatBooks 6s ease-in-out infinite;
+}
+
+.interactive-screen {
+  animation: pulseScreen 4s ease-in-out infinite;
+}
+
+.graduation-cap {
+  animation: rotateGradCap 8s ease-in-out infinite;
+}
+
+.connection-network {
+  animation: networkPulse 5s ease-in-out infinite;
+}
+
+.mobile-learning {
+  animation: floatMobile 5s ease-in-out infinite;
+}
+
+@keyframes floatBooks {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseScreen {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateGradCap {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes networkPulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes floatMobile {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+}
+
 .hero-background-animation::before {
   content: '';
   position: absolute;
@@ -572,6 +663,35 @@
 }
 
 /* ============================================
+   TEAM MEMBER PHOTOS - REAL IMAGES
+   ============================================ */
+.member-photo {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto var(--spacing-md);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  background: #fff;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.team-member:hover .member-photo {
+  transform: scale(1.05);
+  border-color: rgba(217, 119, 6, 0.8);
+  box-shadow: 0 12px 32px rgba(217, 119, 6, 0.4);
+}
+
+/* ============================================
    RESPONSIVE ENHANCEMENTS
    ============================================ */
 @media (max-width: 768px) {
@@ -591,6 +711,16 @@
 
   .modal-features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    width: 95%;
+    opacity: 0.2;
+  }
+
+  .member-photo {
+    width: 150px;
+    height: 150px;
   }
 }
 
