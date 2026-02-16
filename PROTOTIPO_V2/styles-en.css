@@ -37,12 +37,12 @@
 }
 
 /* ============================================
-   HERO LOGO STRIPE - FULL WIDTH WHITE BAND
+   HERO LOGO STRIPE - FULL WIDTH WHITE BAND (THINNER)
    ============================================ */
 .hero-logo-stripe {
   width: 100%;
   background: #FFFFFF;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +50,7 @@
   position: relative;
   z-index: 10;
   margin-bottom: 2rem;
+  min-height: 140px;
 }
 
 .hero-logo {
@@ -59,7 +60,7 @@
 }
 
 .hero-logo img {
-  height: 200px;
+  height: 120px;
   width: auto;
   object-fit: contain;
   filter: none;
@@ -75,17 +76,33 @@
 }
 
 /* ============================================
-   HERO TAGLINE BANNER - BLUE BOX
+   HERO TAGLINE BANNER - WAVE BACKGROUND
    ============================================ */
 .hero-tagline-banner {
-  background: linear-gradient(135deg, #1E3A5F 0%, #2C5282 100%);
-  padding: 2rem 3rem;
+  background-image: url('../Información Recopilada/Onda Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.5rem 3rem;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(30, 58, 95, 0.4);
   margin-top: 0.5rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-tagline-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 58, 95, 0.75);
+  z-index: 1;
 }
 
 .hero-tagline-banner .hero-title {
@@ -95,7 +112,9 @@
   line-height: 1.4;
   margin: 0;
   text-align: center;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
 }
 
 /* ============================================
@@ -773,12 +792,13 @@
 
 @media (max-width: 768px) {
   .hero-logo-stripe {
-    padding: 1.5rem 0;
+    padding: 0.4rem 0;
     margin-bottom: 1.5rem;
+    min-height: 110px;
   }
 
   .hero-logo img {
-    height: 150px;
+    height: 95px;
   }
 
   .hero-tagline-banner {
@@ -820,12 +840,13 @@
 
 @media (max-width: 480px) {
   .hero-logo-stripe {
-    padding: 1.25rem 0;
+    padding: 0.3rem 0;
     margin-bottom: 1.25rem;
+    min-height: 85px;
   }
 
   .hero-logo img {
-    height: 120px;
+    height: 75px;
   }
 
   .hero-tagline-banner {
