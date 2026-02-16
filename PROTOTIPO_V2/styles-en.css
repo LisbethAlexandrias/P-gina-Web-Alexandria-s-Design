@@ -37,11 +37,23 @@
 }
 
 /* ============================================
-   HERO LOGO - CENTERED ABOVE TAGLINE
+   HERO LOGO STRIPE - FULL WIDTH WHITE BAND
    ============================================ */
+.hero-logo-stripe {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2rem;
+}
+
 .hero-logo {
   display: inline-block;
-  margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -49,14 +61,13 @@
   height: 150px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 8px 24px rgba(30, 58, 95, 0.5));
+  filter: drop-shadow(0 4px 12px rgba(30, 58, 95, 0.3));
   transition: all 0.4s ease;
-  background: transparent;
 }
 
 .hero-logo:hover img {
-  filter: drop-shadow(0 12px 36px rgba(6, 148, 162, 0.8));
-  transform: scale(1.1);
+  filter: drop-shadow(0 8px 20px rgba(6, 148, 162, 0.6));
+  transform: scale(1.08);
 }
 
 /* ============================================
@@ -757,12 +768,13 @@
 }
 
 @media (max-width: 768px) {
-  .hero-logo img {
-    height: 110px;
+  .hero-logo-stripe {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
 
-  .hero-logo {
-    margin-bottom: 1.25rem;
+  .hero-logo img {
+    height: 110px;
   }
 
   .hero-tagline-banner {
@@ -803,12 +815,13 @@
 }
 
 @media (max-width: 480px) {
-  .hero-logo img {
-    height: 85px;
+  .hero-logo-stripe {
+    padding: 1.25rem 0;
+    margin-bottom: 1.25rem;
   }
 
-  .hero-logo {
-    margin-bottom: 1rem;
+  .hero-logo img {
+    height: 85px;
   }
 
   .hero-tagline-banner {
