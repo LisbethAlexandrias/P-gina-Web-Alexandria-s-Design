@@ -1,0 +1,33 @@
+# Environment variables - NUNCA subir a GitHub
+.env
+.env.local
+.env.*.local
+
+# API Keys y tokens
+*.key
+*.pem
+secrets/
+
+# Node modules
+node_modules/
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+*.log
+~$*
+
+# Backups
+*.bak
+*.backup

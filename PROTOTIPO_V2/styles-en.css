@@ -871,6 +871,16 @@
 }
 
 /* ============================================
+   TEAM GRID LAYOUT
+   ============================================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+/* ============================================
    TEAM MEMBER PHOTOS - REAL IMAGES
    ============================================ */
 .member-photo {
@@ -967,6 +977,11 @@
     grid-template-columns: 1fr;
   }
 
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
   .hero-banner-image {
     opacity: 0.2;
   }
@@ -1032,6 +1047,11 @@
 
   .navbar {
     padding: 0.5rem 0 !important;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
