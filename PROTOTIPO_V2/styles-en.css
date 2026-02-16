@@ -60,6 +60,30 @@
 }
 
 /* ============================================
+   HERO TAGLINE BANNER - BLUE BOX
+   ============================================ */
+.hero-tagline-banner {
+  background: linear-gradient(135deg, #1E3A5F 0%, #2C5282 100%);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(30, 58, 95, 0.4);
+  margin-top: 0.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-tagline-banner .hero-title {
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
    ENHANCED HERO ANIMATION
    ============================================ */
 .hero-background-animation {
@@ -741,6 +765,15 @@
     margin-bottom: 1.25rem;
   }
 
+  .hero-tagline-banner {
+    padding: 1.5rem 2rem;
+    max-width: 90%;
+  }
+
+  .hero-tagline-banner .hero-title {
+    font-size: 1.5rem;
+  }
+
   .navbar {
     padding: 0.65rem 0 !important;
   }
@@ -776,6 +809,15 @@
 
   .hero-logo {
     margin-bottom: 1rem;
+  }
+
+  .hero-tagline-banner {
+    padding: 1.25rem 1.5rem;
+    max-width: 95%;
+  }
+
+  .hero-tagline-banner .hero-title {
+    font-size: 1.25rem;
   }
 
   .navbar {
