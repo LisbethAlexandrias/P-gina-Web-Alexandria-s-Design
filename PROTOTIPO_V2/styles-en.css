@@ -7,6 +7,17 @@
 @import url('styles.css');
 
 /* ============================================
+   NAVBAR ADJUSTMENTS FOR LARGER LOGO
+   ============================================ */
+.navbar {
+  padding: 1.25rem 0 !important;
+}
+
+.nav-container {
+  gap: 2rem;
+}
+
+/* ============================================
    ENHANCED COLOR BACKGROUNDS
    ============================================ */
 .sectores {
@@ -26,25 +37,26 @@
 }
 
 /* ============================================
-   ENHANCED LOGO - BALANCED SIZE
+   ENHANCED LOGO - LARGE & PROMINENT
    ============================================ */
 .logo {
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
+  padding: 0.5rem 0;
 }
 
 .logo-full {
-  height: 60px;
+  height: 90px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 3px 10px rgba(30, 58, 95, 0.25));
+  filter: drop-shadow(0 4px 12px rgba(30, 58, 95, 0.3));
   transition: all 0.3s ease;
 }
 
 .logo:hover .logo-full {
-  filter: drop-shadow(0 5px 15px rgba(6, 148, 162, 0.5));
-  transform: scale(1.03);
+  filter: drop-shadow(0 6px 18px rgba(6, 148, 162, 0.6));
+  transform: scale(1.05);
 }
 
 /* ============================================
@@ -696,7 +708,11 @@
 
 @media (max-width: 768px) {
   .logo-full {
-    height: 50px;
+    height: 70px;
+  }
+
+  .navbar {
+    padding: 1rem 0 !important;
   }
 
   .modal-content {
@@ -725,7 +741,11 @@
 
 @media (max-width: 480px) {
   .logo-full {
-    height: 45px;
+    height: 60px;
+  }
+
+  .navbar {
+    padding: 0.75rem 0 !important;
   }
 }
 
