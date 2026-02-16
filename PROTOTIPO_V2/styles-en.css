@@ -10,11 +10,11 @@
    NAVBAR ADJUSTMENTS FOR LARGER LOGO
    ============================================ */
 .navbar {
-  padding: 1.25rem 0 !important;
+  padding: 0.75rem 0 !important;
 }
 
 .nav-container {
-  gap: 2rem;
+  justify-content: center;
 }
 
 /* ============================================
@@ -37,26 +37,25 @@
 }
 
 /* ============================================
-   ENHANCED LOGO - LARGE & PROMINENT
+   HERO LOGO - CENTERED ABOVE TAGLINE
    ============================================ */
-.logo {
-  display: flex;
-  align-items: center;
+.hero-logo {
+  display: inline-block;
+  margin-bottom: 2rem;
   transition: all 0.3s ease;
-  padding: 0.5rem 0;
 }
 
-.logo-full {
-  height: 90px;
+.hero-logo img {
+  height: 120px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(30, 58, 95, 0.3));
+  filter: drop-shadow(0 8px 24px rgba(30, 58, 95, 0.4));
   transition: all 0.3s ease;
 }
 
-.logo:hover .logo-full {
-  filter: drop-shadow(0 6px 18px rgba(6, 148, 162, 0.6));
-  transform: scale(1.05);
+.hero-logo:hover img {
+  filter: drop-shadow(0 12px 32px rgba(6, 148, 162, 0.7));
+  transform: scale(1.08);
 }
 
 /* ============================================
@@ -733,12 +732,12 @@
 }
 
 @media (max-width: 768px) {
-  .logo-full {
-    height: 70px;
+  .hero-logo img {
+    height: 90px;
   }
 
   .navbar {
-    padding: 1rem 0 !important;
+    padding: 0.65rem 0 !important;
   }
 
   .modal-content {
@@ -766,12 +765,12 @@
 }
 
 @media (max-width: 480px) {
-  .logo-full {
-    height: 60px;
+  .hero-logo img {
+    height: 70px;
   }
 
   .navbar {
-    padding: 0.75rem 0 !important;
+    padding: 0.5rem 0 !important;
   }
 }
 
