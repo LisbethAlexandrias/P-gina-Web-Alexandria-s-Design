@@ -1052,9 +1052,9 @@
    NEW INTERACTIVE FEATURES STYLES
    ============================================ */
 
-/* Accessible color for member title (instead of orange) */
+/* Accessible color for member title - Academic Navy from brand palette */
 .member-title {
-  color: #B45309 !important;
+  color: #1E3A5F !important;
 }
 
 /* ADDIE Tooltips */
