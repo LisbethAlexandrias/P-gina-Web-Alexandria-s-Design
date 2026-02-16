@@ -66,15 +66,14 @@
 .hero-logo-stripe {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  background: #FFFFFF;
-  padding: 0.75rem 0;
+  background-color: #ffffff;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 10;
-  min-height: 150px;
 }
 
 .hero-logo {
@@ -84,8 +83,11 @@
 }
 
 .hero-logo img {
-  height: 135px;
+  height: auto;
+  max-height: 180px;
   width: auto;
+  display: block;
+  margin: 0 auto;
   object-fit: contain;
   filter: none;
   transition: all 0.4s ease;
@@ -908,12 +910,11 @@
 
 @media (max-width: 768px) {
   .hero-logo-stripe {
-    padding: 0.6rem 0;
-    min-height: 110px;
+    padding: 15px 0;
   }
 
   .hero-logo img {
-    height: 99px;
+    max-height: 140px;
   }
 
   .hero-title-section {
@@ -983,12 +984,11 @@
 
 @media (max-width: 480px) {
   .hero-logo-stripe {
-    padding: 0.5rem 0;
-    min-height: 90px;
+    padding: 12px 0;
   }
 
   .hero-logo img {
-    height: 81px;
+    max-height: 100px;
   }
 
   .hero-title-section {

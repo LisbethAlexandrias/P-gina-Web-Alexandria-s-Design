@@ -424,7 +424,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Connect all CTA buttons to contact modal
-  document.querySelectorAll('a[href="#contact"]:not(.modal-content a), .hero-cta .btn, .cta-buttons .btn').forEach(button => {
+  document.querySelectorAll('a[href="#contact"]:not(.modal-content a)').forEach(button => {
     button.addEventListener('click', function(e) {
       e.preventDefault();
       contactModal.classList.add('active');
