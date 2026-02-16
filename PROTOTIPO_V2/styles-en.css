@@ -113,7 +113,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 4rem 2rem;
-  margin-top: 3rem;
+  margin-top: 0;
   position: relative;
   overflow: hidden;
 }
@@ -831,7 +831,7 @@
 
   .hero-wave-banner {
     padding: 3rem 1.5rem;
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   .navbar {
@@ -886,7 +886,7 @@
 
   .hero-wave-banner {
     padding: 2.5rem 1rem;
-    margin-top: 1.5rem;
+    margin-top: 0;
   }
 
   .navbar {
